@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour
     public UnityEngine.UI.Image fuel_image;
     public UnityEngine.UI.Slider turbo_slider;
     public CarController car;
-    public float coin = 0;
+    public CoinCollector coins;
     bool gameover = false;
     private void Start()
     {
@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
     {
         turbo_slider.value = car.turbo;
         fuel_image.fillAmount = car.fuel;
-        score.text = "Score: " + coin.ToString();
+        score.text = "Score: " + coins.coins;
         if(car.fuel <= 0 && gameover == false)
         {
             gameover = true;

@@ -1051,7 +1051,7 @@ PrefabInstance:
     - target: {fileID: 1856618619337358455, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
         type: 3}
       propertyPath: turbo_force
-      value: 1600
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 1856618619337358455, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
         type: 3}

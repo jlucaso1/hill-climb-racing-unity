@@ -7,19 +7,20 @@ public class UIController : MonoBehaviour
     public TMP_Text score_text;
     public UnityEngine.UI.Image fuel_image;
     public UnityEngine.UI.Slider turbo_slider;
-    public GameController game;
-    public CarController car;
-    public CoinCollector coins;
+    GameController game;
+    VehicleController vehicle;
     void Start()
     {
-        turbo_slider.maxValue = car.max_turbo;
+        game = GameObject.Find("Game").GetComponent<GameController>();
+        vehicle = GameObject.Find("Player").GetComponentInChildren<VehicleController>();
+        turbo_slider.maxValue = vehicle.max_turbo;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        turbo_slider.value = car.turbo;
-        fuel_image.fillAmount = car.fuel;
-        score_text.text = "Score: " + coins.coins;
+        turbo_slider.value = vehicle.turbo;
+        fuel_image.fillAmount = vehicle.fuel;
+        score_text.text = "Score: " + game.coins;
     }
 }

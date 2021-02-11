@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
-    public CarController car;
-    public CoinCollector coins;
+    public int coins = 0;
     bool gameover = false;
 
     private void Update()
     {
-        if(car.fuel <= 0 && gameover == false)
+        if (GameObject.Find("Player").GetComponentInChildren<VehicleController>().fuel <= 0 && gameover == false)
         {
             gameover = true;
         }

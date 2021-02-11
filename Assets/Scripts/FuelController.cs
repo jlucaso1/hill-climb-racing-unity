@@ -6,7 +6,10 @@ public class FuelController : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<CarController>().fuel = 1;
-        Destroy(gameObject);
+        if (collision.gameObject.tag == "Vehicle")
+        {
+            GameObject.Find("Player").GetComponentInChildren<VehicleController>().fuel = 1;
+            Destroy(gameObject);
+        }
     }
 }

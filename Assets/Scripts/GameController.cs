@@ -5,17 +5,24 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public int coins = 0;
-    bool gameover = false;
 
     private void Update()
     {
-        if (GameObject.Find("Player").GetComponentInChildren<VehicleController>().fuel <= 0 && gameover == false)
+        if (GameObject.Find("Player").GetComponentInChildren<VehicleController>().fuel <= 0)
         {
-            gameover = true;
+            //GameObject.Find("GameOverUI").GetComponent<GameOverController>().showGameOver();
         }
         if (Input.GetKey("escape"))
         {
-            SceneManager.LoadScene("MainMenu");
+            BackToMainMenu();
         }
+    }
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Level0");
+    }
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

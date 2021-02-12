@@ -15,6 +15,7 @@ public class VehicleController : MonoBehaviour
     public float max_turbo = 100f;
     public float turbo;
     public float turbo_force = 3000f;
+    public float maxAngularVelocity = 400f;
     private float movement = 0f;
     private float rotation = 0f;
     private bool isTurbo;
@@ -34,6 +35,8 @@ public class VehicleController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (rb.angularVelocity < -maxAngularVelocity) { rb.angularVelocity = -maxAngularVelocity; }
+        if (rb.angularVelocity > maxAngularVelocity) { rb.angularVelocity = maxAngularVelocity; }
         if (movement == 0f || fuel <= 0f)
         {
             backWheel.useMotor = false;

@@ -601,6 +601,11 @@ PrefabInstance:
       propertyPath: m_Suspension.m_Frequency
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1856618618745641121, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
+        type: 3}
+      propertyPath: m_Suspension.m_DampingRatio
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1856618618745641135, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1215,17 +1220,17 @@ PrefabInstance:
     - target: {fileID: 1856618619337358455, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
         type: 3}
       propertyPath: speed
-      value: 1500
+      value: 1600
       objectReference: {fileID: 0}
     - target: {fileID: 1856618619337358455, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
         type: 3}
       propertyPath: fuelconsume
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1856618619337358455, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
         type: 3}
       propertyPath: turbo_force
-      value: 2000
+      value: 2100
       objectReference: {fileID: 0}
     - target: {fileID: 1856618619337358455, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
         type: 3}
@@ -1256,6 +1261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Suspension.m_Frequency
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856618620170468097, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
+        type: 3}
+      propertyPath: m_Suspension.m_DampingRatio
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1856618620170468111, guid: dbe8c9a52c03b204b94f58fdcab1d73b,
         type: 3}

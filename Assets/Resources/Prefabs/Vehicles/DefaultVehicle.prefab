@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 1856618619337358453}
   - component: {fileID: 1856618619337358455}
   m_Layer: 9
-  m_Name: Default Vehicle
+  m_Name: DefaultVehicle
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1856618619337358448}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: eec454e3de556b1449ac68306f41739b, type: 2}
+  m_Material: {fileID: 6200000, guid: 03eb9b6cec5c07b4aad077dfc7734a5e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -409,6 +409,7 @@ MonoBehaviour:
   max_turbo: 100
   turbo: 0
   turbo_force: 3000
+  maxAngularVelocity: 400
 --- !u!1 &1856618620170468108
 GameObject:
   m_ObjectHideFlags: 0

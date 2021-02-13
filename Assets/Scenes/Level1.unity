@@ -142,7 +142,7 @@ PrefabInstance:
     - target: {fileID: 6627979676994619733, guid: 0f66c67a46222e842b3231e9d7f7ab50,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6627979676994619733, guid: 0f66c67a46222e842b3231e9d7f7ab50,
         type: 3}
@@ -414,7 +414,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!224 &277307350
 RectTransform:
@@ -431,7 +431,7 @@ RectTransform:
   - {fileID: 868405446}
   - {fileID: 1199541789}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -473,12 +473,12 @@ PrefabInstance:
     - target: {fileID: 8593074436513191602, guid: 6714c43c3288e3c40ad7c398d2b6a97a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 194.97739
+      value: 161.384
       objectReference: {fileID: 0}
     - target: {fileID: 8593074436513191602, guid: 6714c43c3288e3c40ad7c398d2b6a97a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.430624
+      value: 15.03
       objectReference: {fileID: 0}
     - target: {fileID: 8593074436513191602, guid: 6714c43c3288e3c40ad7c398d2b6a97a,
         type: 3}
@@ -1743,7 +1743,7 @@ GameObject:
   - component: {fileID: 1648226292}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2073,7 +2073,7 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.09
   m_Points:
   - {x: -7.673313, y: -11.308005}
   - {x: -7.7390137, y: 2.0896902}
@@ -2343,7 +2343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1688219872
 GameObject:

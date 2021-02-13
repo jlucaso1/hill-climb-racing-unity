@@ -20,5 +20,5 @@ public class UIController : MonoBehaviour
         fuel_image.fillAmount = vehicle.fuel;
         score_text.text = "Score: " + game.coins;
     }
-    
+
 }

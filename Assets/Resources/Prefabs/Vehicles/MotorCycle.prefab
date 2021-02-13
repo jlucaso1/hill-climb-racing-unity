@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 1057128937232823176}
   - component: {fileID: 5863597473769558577}
   - component: {fileID: 1824876891105228920}
+  - component: {fileID: 731444559402254150}
   m_Layer: 0
   m_Name: driver-head
   m_TagString: Untagged
@@ -412,6 +413,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: -30
     m_UpperAngle: 30
+--- !u!114 &731444559402254150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151877158870189601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e6199083b93dc44b44efc46e94441d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8609755563447419518
 GameObject:
   m_ObjectHideFlags: 0

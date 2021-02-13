@@ -5,11 +5,21 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     public string sceneName;
-    private void OnTriggerEnter2D(Collider2D collision)
+    IEnumerator DeathEffect()
+    {
+        Time.timeScale = 0.4f;
+        Time.fixedDeltaTime = 0.02F * Time.timeScale;
+        yield return new WaitForSeconds(1.5f);
+        Time.timeScale = 1f;
+        Time.fixedDeltaTime = 0.02F * Time.timeScale;
+        SceneManager.LoadScene(sceneName);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Vehicle")
         {
-            SceneManager.LoadScene(sceneName);
+            GetComponent<Rigidbody2D>().AddForce(transform.forward * 5);
+            StartCoroutine(DeathEffect());
         }
     }
 }

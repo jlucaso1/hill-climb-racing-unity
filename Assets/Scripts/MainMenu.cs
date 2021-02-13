@@ -14,8 +14,4 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quitting");
         Application.Quit();
     }
-    void Awake()
-    {
-        QualitySettings.vSyncCount = 1;
-    }
 }
